@@ -19,9 +19,9 @@ services:
         value: 3.11.0
 
   # Frontend Vite React Static Site
-  - type: static
+  - type: web
     name: ventureforge-frontend
-    runtime: node
+    runtime: static
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     rootDir: frontend
