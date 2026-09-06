@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "lyzr-mcp": {
+      "command": "python",
+      "args": [
+        "-m",
+        "lyzr_tool_call.server"
+      ],
+      "env": {
+        "LYZR_API_KEY": "YOUR_LYZR_API_KEY",
+        "LYZR_USER_ID": "YOUR_LYZR_USER_ID"
+      }
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_TOKEN"
+      }
+    }
+  }
+}
